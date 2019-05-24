@@ -7,11 +7,11 @@ class IRCBot < Isaac::Bot
 			on :connect do
 				join @chan
 				puts "IRC: joined #{@chan}"
-				msg "Miaou!"
+				msg "Nyan!"
 			end
 
-			on :channel, /miaou/i do
-				msg "Nyan!"
+			on :channel, /nyan/i do
+				msg "Miaou!"
 			end
 		end
 	end
